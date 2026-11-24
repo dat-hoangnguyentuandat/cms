@@ -1,0 +1,10 @@
+{
+    "label": "Khung soạn thảo",
+    "allowed_zones": [
+        "main",
+        "footer_1",
+        "footer_2",
+        "footer_3"
+    ],
+    "key": "editor"
+}

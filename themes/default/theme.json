@@ -1,0 +1,8 @@
+{
+  "name": "default",
+  "version": "1.0.0",
+  "author": "Helmet CMS",
+  "preview": "assets/images/preview.svg",
+  "requires_layout": false,
+  "description": "Theme cơ sở — giao diện trung tính, hiện đại, dùng được cho mọi loại website CMS."
+}

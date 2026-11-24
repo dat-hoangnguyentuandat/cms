@@ -1,0 +1,7 @@
+{
+    "label": "Khối dịch vụ",
+    "allowed_zones": [
+        "main"
+    ],
+    "key": "service-block"
+}

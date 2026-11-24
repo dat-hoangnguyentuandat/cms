@@ -1,0 +1,80 @@
+{
+  "name": "default",
+  "title": "Plugin Mặc định",
+  "version": "1.0.0",
+  "author": "CMS",
+  "description": "Plugin mẫu của core CMS: minh họa admin route, settings_schema, widget, asset, shortcode và hook.",
+  "provider": "Plugins\\Default\\Plugin",
+  "permissions": {
+    "default-plugin": "Plugin Mặc định"
+  },
+  "route_permissions": {
+    "admin.plugins.default": "default-plugin"
+  },
+  "admin_menu": [
+    {
+      "group": "Mẫu",
+      "route": "admin.plugins.default.index",
+      "icon": "plug",
+      "label": "Plugin Mặc định",
+      "permission": "default-plugin"
+    }
+  ],
+  "settings_schema": {
+    "notice": {
+      "type": "textarea",
+      "label": "Thông báo chung",
+      "rows": 3,
+      "default": "Thông báo từ Plugin Mặc định."
+    },
+    "accent_color": {
+      "type": "color",
+      "label": "Màu nhấn",
+      "default": "#2563eb"
+    }
+  },
+  "widgets": {
+    "default-announcement": {
+      "label": "Default Announcement",
+      "allowed_zones": ["header", "main", "footer_top"],
+      "settings_schema": {
+        "eyebrow": {
+          "type": "text",
+          "label": "Nhãn nhỏ",
+          "default": "Plugin Mặc định"
+        },
+        "title": {
+          "type": "text",
+          "label": "Tiêu đề",
+          "default": "Widget mẫu từ plugin"
+        },
+        "content": {
+          "type": "textarea",
+          "label": "Nội dung",
+          "rows": 3,
+          "default": "Block này được cấu hình trực tiếp trong Bố cục trang chủ bằng settings_schema."
+        },
+        "button_text": {
+          "type": "text",
+          "label": "Chữ nút",
+          "default": "Liên hệ"
+        },
+        "button_url": {
+          "type": "url",
+          "label": "Đường dẫn nút",
+          "default": "/lien-he"
+        },
+        "background_color": {
+          "type": "color",
+          "label": "Màu nền",
+          "default": "#eff6ff"
+        },
+        "accent_color": {
+          "type": "color",
+          "label": "Màu nhấn",
+          "default": "#2563eb"
+        }
+      }
+    }
+  }
+}

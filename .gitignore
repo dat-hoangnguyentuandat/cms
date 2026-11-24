@@ -1,0 +1,88 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+/auth.json
+*.key
+*.pem
+*.p12
+*.pfx
+
+# PHP dependencies and tooling
+/vendor/
+/.phpactor.json
+/.phpunit.result.cache
+/.phpunit.cache/
+/coverage/
+
+# Frontend dependencies and generated builds
+/node_modules/
+/public/build/
+/public/hot
+
+# Laravel runtime
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+/public/storage
+/storage/app/tenants/
+/storage/framework/tenants/
+/storage/framework/platform-demo/
+/storage/pail/
+
+# Local databases and backups
+/database/*.sqlite*
+/database/*.db
+/*.sql
+/*.sql.gz
+/database/*.sql
+/database/*.sql.gz
+/backup/
+/backups/
+
+# Generated test and browser artifacts
+/artifacts/
+/playwright-report/
+/test-results/
+/public/test-css.html
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors and local assistant configuration
+/.agents/
+/.claude/
+/.fleet/
+/.idea/
+/.nova/
+/.vscode/
+/.zed/
+
+# Theme folders: keep only the base/default theme in Git.
+/themes/*
+!/themes/default/
+!/themes/default/**
+
+/public/theme-assets/*
+!/public/theme-assets/default/
+!/public/theme-assets/default/**
+
+# Plugin folders live in a separate repository, same policy as custom themes.
+/plugins/*
+!/plugins/default/
+!/plugins/default/**
+
+/public/plugin-assets/*
+!/public/plugin-assets/default/
+!/public/plugin-assets/default/**
+
+/artifacts/sitemaps/*
+
+# OS and local VM files
+.DS_Store
+Thumbs.db
+Homestead.json
+Homestead.yaml
